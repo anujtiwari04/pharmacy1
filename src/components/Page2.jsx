@@ -40,7 +40,7 @@ const Page2 = () => {
       console.log({ email, password });
     //   alert("Form submitted successfully!");
     } else {
-      alert("Please fulfill all password conditions.");
+      alert("Veuillez respecter toutes les conditions du mot de passe.");
     }
   };
 
@@ -58,14 +58,14 @@ const Page2 = () => {
 
         {/* Form Title */}
         <h1 className="text-2xl font-semibold text-center mb-6">
-          Account Information
+          Informations du compte
         </h1>
 
         {/* Email Input */}
         <div className="my-2">
-          <p className="my-2">Pharmacy Email Address*</p>
+          <p className="my-2">Adresse e-mail de la pharmacie*</p>
           <TextField
-            label="Email Address"
+            label="Adresse e-mail"
             variant="outlined"
             fullWidth
             required
@@ -76,9 +76,9 @@ const Page2 = () => {
 
         {/* Password Input */}
         <div className="my-2">
-          <p className="my-2">Password*</p>
+          <p className="my-2">Mot de passe*</p>
           <TextField
-            label="Password"
+            label="Mot de passe"
             type="password"
             variant="outlined"
             fullWidth
@@ -90,9 +90,9 @@ const Page2 = () => {
 
         {/* Password Confirmation Input */}
         <div className="my-2">
-          <p className="my-2">Confirm Password*</p>
+          <p className="my-2">Confirmer le mot de passe*</p>
           <TextField
-            label="Confirm Password"
+            label="Confirmer le mot de passe"
             type="password"
             variant="outlined"
             fullWidth
@@ -104,18 +104,18 @@ const Page2 = () => {
 
         {/* Password Requirements */}
         <div className="mt-4">
-          {renderCondition(conditions.length, "At least 10 characters")}
+          {renderCondition(conditions.length, "Au moins 10 caractères")}
           {renderCondition(
             conditions.uppercase,
-            "Includes at least one uppercase letter"
+            "Inclut au moins une lettre majuscule"
           )}
           {renderCondition(
             conditions.lowercase,
-            "Includes at least one lowercase letter"
+            "Inclut au moins une lettre minuscule"
           )}
-          {renderCondition(conditions.number, "Includes at least one number")}
-          {renderCondition(conditions.symbol, "Includes at least one symbol")}
-          {renderCondition(conditions.match, "Passwords match")}
+          {renderCondition(conditions.number, "Inclut au moins un chiffre")}
+          {renderCondition(conditions.symbol, "Inclut au moins un symbole")}
+          {renderCondition(conditions.match, "Les mots de passe correspondent")}
         </div>
 
         {/* Submit Button */}
@@ -127,7 +127,7 @@ const Page2 = () => {
           className="mt-4"
           onClick={handleSubmit}
         >
-          Continue
+          Continuer
         </Button>
         </Link>
       </div>

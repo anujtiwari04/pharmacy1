@@ -6,16 +6,16 @@ import image from "../assets/Frame 436.png";
 import { Link } from "react-router-dom";
 
 const countryOptions = [
-  { code: "US", dialCode: "+1", label: "United States" },
-  { code: "GB", dialCode: "+44", label: "United Kingdom" },
-  { code: "IN", dialCode: "+91", label: "India" },
+  { code: "US", dialCode: "+1", label: "États-Unis" },
+  { code: "GB", dialCode: "+44", label: "Royaume-Uni" },
+  { code: "IN", dialCode: "+91", label: "Inde" },
   { code: "FR", dialCode: "+33", label: "France" },
-  { code: "DE", dialCode: "+49", label: "Germany" },
-  { code: "JP", dialCode: "+81", label: "Japan" },
-  { code: "AU", dialCode: "+61", label: "Australia" },
-  { code: "CN", dialCode: "+86", label: "China" },
-  { code: "IT", dialCode: "+39", label: "Italy" },
-  { code: "ES", dialCode: "+34", label: "Spain" },
+  { code: "DE", dialCode: "+49", label: "Allemagne" },
+  { code: "JP", dialCode: "+81", label: "Japon" },
+  { code: "AU", dialCode: "+61", label: "Australie" },
+  { code: "CN", dialCode: "+86", label: "Chine" },
+  { code: "IT", dialCode: "+39", label: "Italie" },
+  { code: "ES", dialCode: "+34", label: "Espagne" },
 ];
 
 const Mui = () => {
@@ -47,23 +47,23 @@ const Mui = () => {
         <img src={icon} alt="Icon" className="mx-auto mb-4 h-12" />
 
         {/* Form Title */}
-        <h1 className="text-2xl font-semibold text-center mb-6">Holder Information</h1>
+        <h1 className="text-2xl font-semibold text-center mb-6">Informations du titulaire</h1>
 
         {/* Name Input */}
         <div className="my-2">
-          <p className="my-2">Last Name</p>
-          <TextField label="Last Name" variant="outlined" fullWidth required />
+          <p className="my-2">Nom de famille</p>
+          <TextField label="Nom de famille" variant="outlined" fullWidth required />
         </div>
         <div className="my-2">
-          <p className="my-2">First Name</p>
-          <TextField label="First Name" variant="outlined" fullWidth required />
+          <p className="my-2">Prénom</p>
+          <TextField label="Prénom" variant="outlined" fullWidth required />
         </div>
 
         {/* Date of Birth Input */}
         <div className="my-2">
-          <p className="my-2">Date of Birth</p>
+          <p className="my-2">Date de naissance</p>
           <TextField
-            label="Date of Birth"
+            label="Date de naissance"
             variant="outlined"
             type="date"
             fullWidth
@@ -74,8 +74,8 @@ const Mui = () => {
 
         {/* Professional ID Input */}
         <div className="my-2">
-          <p className="my-2">Professional ID</p>
-          <TextField label="Pharmacist Professional Number" variant="outlined" fullWidth required />
+          <p className="my-2">ID professionnel</p>
+          <TextField label="Numéro professionnel de pharmacien" variant="outlined" fullWidth required />
         </div>
 
         {/* SIRET Input */}
@@ -105,7 +105,7 @@ const Mui = () => {
               ))}
             </TextField>
             <TextField
-              label="Phone Number"
+              label="Numéro de téléphone"
               variant="outlined"
               fullWidth
               value={phoneNumber}
@@ -121,17 +121,17 @@ const Mui = () => {
             control={<Checkbox required />}
             label={
               <span>
-                I accept the <b>General Terms of Use</b>, the {" "}
+                J'accepte les <b>Conditions Générales d'Utilisation</b>, les {" "}
                 <a
                   href="/payment-terms"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  Payment Service Terms of Use
+                  Conditions Générales d'Utilisation du Service de Paiement
                 </a>
-                , and I acknowledge that I have read the {" "}
-                <b>Privacy Policy</b>.
+                , et je reconnais avoir lu la {" "}
+                <b>Politique de Confidentialité</b>.
               </span>
             }
           />
@@ -140,7 +140,7 @@ const Mui = () => {
         {/* Submit Button */}
         <Link to="/page2">
             <Button variant="contained" color="primary" fullWidth className="mt-4">
-                Accept and Continue
+                Accepter et Continuer
             </Button>
         </Link>
         

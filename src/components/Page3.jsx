@@ -5,7 +5,6 @@ import icon from "../assets/Frame 401.png"; // Adjust path if needed
 import image from "../assets/Frame 436.png";
 import { Link } from "react-router-dom";
 
-
 const Page3 = () => {
     const [pharmacyName, setPharmacyName] = useState("");
     const [pharmacyAddress, setPharmacyAddress] = useState("");
@@ -36,13 +35,13 @@ const Page3 = () => {
                 <img src={icon} alt="Icon" className="mx-auto mb-4 h-12" />
 
                 {/* Form Title */}
-                <h1 className="text-2xl font-semibold text-center mb-6">My Pharmacy</h1>
+                <h1 className="text-2xl font-semibold text-center mb-6">Ma pharmacie</h1>
 
                 {/* Pharmacy Name Input */}
                 <div className="my-2">
-                    <p className="my-2">Name of your pharmacy*</p>
+                    <p className="my-2">Nom de votre pharmacie*</p>
                     <TextField
-                        label="Pharmacy Name"
+                        label="Nom de la pharmacie"
                         variant="outlined"
                         fullWidth
                         required
@@ -53,10 +52,10 @@ const Page3 = () => {
 
                 {/* Pharmacy Address Input */}
                 <div className="my-2">
-                    <p className="my-2">Address of your pharmacy*</p>
+                    <p className="my-2">Adresse de votre pharmacie*</p>
                     <div className="flex items-center">
                         <TextField
-                            label="Pharmacy Address"
+                            label="Adresse de la pharmacie"
                             variant="outlined"
                             fullWidth
                             required
@@ -80,7 +79,7 @@ const Page3 = () => {
                         className="mt-4"
                         onClick={handleSubmit}
                     >
-                        Submit
+                        Soumettre
                     </Button>
                 </Link>
             </div>
